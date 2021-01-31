@@ -4,6 +4,14 @@
 
 A quick reference to view, copy, and print TailwindCSS colors
 
+### Development
+
+First time setup: `npm install`
+
+Development: `npm run dev`
+
+Production: `npm run build`
+
 ### Links
 
 - Live demo: https://justingolden.me/tailwind-colors

@@ -14,14 +14,42 @@
 		@apply text-2xl font-light;
 	}
 	h2 {
-		@apply text-xl font-medium;
+		@apply text-xl font-light;
 	}
 	p {
 		@apply leading-relaxed;
 	}
+	a {
+		@apply text-gray-500 hover:underline;
+	}
 }
 
 @layer components {
+	.shade {
+		display: block;
+	}
+	.color {
+		display: inline-block;
+		margin: 0.5rem;
+	}
+	.color-preview {
+		border-radius: 0.5rem;
+		width: 2rem;
+		height: 2rem;
+		margin: 0.25rem;
+		display: inline-block;
+		cursor: pointer;
+	}
+	.color-preview:hover {
+		@apply shadow-lg;
+	}
+
+	.number {
+		@apply text-gray-700;
+	}
+	.hex {
+		@apply text-gray-700 text-sm;
+	}
 
 }
 

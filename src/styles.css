@@ -58,7 +58,7 @@
 }
 
 @media print {
-	h1, a {
+	h1, a, p.my-4, hr {
 		display: none;
 	}
 	body, .color-preview {

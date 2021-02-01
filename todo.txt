@@ -1,0 +1,5 @@
+maybe:
+better hover styles on the colors
+add share buttons
+add icon
+make it a PWA

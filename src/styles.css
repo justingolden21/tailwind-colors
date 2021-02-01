@@ -10,6 +10,10 @@
 		@apply bg-gray-100;
 	}
 
+	body {
+		margin: 1rem;
+	}
+
 	h1 {
 		@apply text-2xl font-light;
 	}
@@ -51,6 +55,15 @@
 		@apply text-gray-700 text-sm;
 	}
 
+}
+
+@media print {
+	h1, a {
+		display: none;
+	}
+	body, .color-preview {
+		margin: 0;
+	}
 }
 
 @media (min-width: 640px) { /* sm */

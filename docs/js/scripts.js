@@ -16,12 +16,14 @@ function copyText(text,num,elm) {
 	input.setAttribute('value', text);
 	document.body.appendChild(input);
 	input.select();
-	document.execCommand('copy');
+	let success = document.execCommand('copy');
 	document.body.removeChild(input);
 
-	const check = `<svg style="position:relative;top:8px;left:8px;width:16px;height:16px;" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-	<path stroke="#${num>300?'F9FAFB':'374151'}" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M5 13l4 4L19 7"></path>
-	</svg>`;
-	elm.innerHTML = check;
-	setTimeout(()=> elm.innerHTML = '', 750);
+	if(success) {
+		const check = `<svg style="position:relative;top:8px;left:8px;width:16px;height:16px;" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+		<path stroke="#${num>300?'F9FAFB':'374151'}" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M5 13l4 4L19 7"></path>
+		</svg>`;
+		elm.innerHTML = check;
+		setTimeout(()=> elm.innerHTML = '', 750);
+	}
  }

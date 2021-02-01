@@ -12,6 +12,13 @@ window.onload = ()=> {
 
 	document.getElementById('print-btn').onclick = ()=> window.print();
 	document.getElementById('download-btn').onclick = ()=> document.getElementById('download-link').click();
+
+	let dark = false;
+	document.getElementById('dark-btn').onclick = ()=> {
+		dark = !dark;
+		document.body.style.backgroundColor = dark ? '#000' : '#FFF';
+		document.body.style.color = dark ? '#FFF' : '#000';
+	};
 };
 
 function copyText(text, num, elm) {

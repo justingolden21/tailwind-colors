@@ -60,7 +60,7 @@
 	}
 
 	button {
-		@apply p-2 rounded-md text-gray-700 hover:bg-gray-700 hover:text-white;
+		@apply p-2 mx-1 rounded-md text-gray-700 hover:bg-gray-700 hover:text-white;
 	}
 
 	header {

@@ -12,6 +12,7 @@ window.onload = ()=> {
 	document.getElementById('colors').innerHTML = html;
 
 	document.getElementById('print-btn').onclick = ()=> window.print();
+	document.getElementById('download-btn').onclick = ()=> document.getElementById('download-link').click();
 };
 
 function copyText(text,num,elm) {

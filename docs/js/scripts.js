@@ -1,7 +1,7 @@
 window.onload = ()=> {
 	let html = '';
 	for(let color in colors) {
-		html += `<h2>${color} &mdash; <small>${colors[color].name}</small></h2>`;
+		html += `<h2>${color} &mdash; <small>colors.${colors[color].name}</small></h2>`;
 		for(let key in colors[color]) {
 			if(key=='name') continue;
 			let hex = colors[color][key];

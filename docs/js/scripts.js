@@ -1,3 +1,4 @@
+let d = document, get = d.getElementById.bind(d);
 window.onload = ()=> {
 	let html = '';
 	for(let color in colors) {
@@ -8,26 +9,26 @@ window.onload = ()=> {
 			html += `<div class="color"><p class="number">${key}</p><div class="color-preview" style="background-color:${hex};" onclick="copyText('${hex}',${key},this)"></div><p class="hex">${hex}</p></div>`;
 		}
 	}
-	document.getElementById('colors').innerHTML = html;
+	get('colors').innerHTML = html;
 
-	document.getElementById('print-btn').onclick = ()=> window.print();
-	document.getElementById('download-btn').onclick = ()=> document.getElementById('download-link').click();
+	get('print-btn').onclick = ()=> window.print();
+	get('download-btn').onclick = ()=> get('download-link').click();
 
 	let dark = false;
-	document.getElementById('dark-btn').onclick = ()=> {
+	get('dark-btn').onclick = ()=> {
 		dark = !dark;
-		document.body.style.backgroundColor = dark ? '#000' : '#FFF';
-		document.body.style.color = dark ? '#FFF' : '#111827';
+		d.body.style.backgroundColor = dark ? '#000' : '#FFF';
+		d.body.style.color = dark ? '#FFF' : '#111827';
 	};
 };
 
 function copyText(text, num, elm) {
-	let input = document.createElement('input');
+	let input = d.createElement('input');
 	input.setAttribute('value', text);
-	document.body.appendChild(input);
+	d.body.appendChild(input);
 	input.select();
-	let success = document.execCommand('copy');
-	document.body.removeChild(input);
+	let success = d.execCommand('copy');
+	d.body.removeChild(input);
 
 	if(success) {
 		const check = `<svg style="position:relative;top:8px;left:8px;width:16px;height:16px;" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">

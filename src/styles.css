@@ -4,10 +4,10 @@
 
 @layer base {
 	::-moz-selection {
-		@apply bg-gray-100;
+		@apply bg-indigo-100;
 	}
 	::selection {
-		@apply bg-gray-100;
+		@apply bg-indigo-100;
 	}
 
 	body {
@@ -15,7 +15,7 @@
 	}
 
 	*:focus, button:focus {
-		@apply outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-opacity-50;
+		@apply outline-none ring-2 ring-indigo-500 ring-opacity-50;
 	}
 
 	h1 {
@@ -83,17 +83,17 @@
 	}
 }
 
-@media (min-width: 640px) { /* sm */
+@screen sm { /* 640px */
 }
 
-@media (min-width: 768px) { /* md */
+@screen md { /* 768px */
 	.hex {
 		@apply text-sm;
 	}
 }
 
-@media (min-width: 1024px) { /* lg */
+@screen lg { /* 1024px */
 }
 
-@media (min-width: 1280px) { /* xl */
+@screen xl { /* 1280px */
 }

@@ -3,3 +3,4 @@ better hover styles on the colors
 add share buttons
 add icon
 make it a PWA
+night btn to toggle black bg body

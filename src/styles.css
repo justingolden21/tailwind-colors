@@ -19,7 +19,7 @@
 	}
 
 	h1 {
-		@apply text-2xl font-light;
+		@apply text-2xl font-light tracking-widest;
 	}
 	h2 {
 		@apply text-xl font-light;
@@ -33,9 +33,6 @@
 }
 
 @layer components {
-	.shade {
-		display: block;
-	}
 	.color {
 		display: inline-block;
 		margin: 0.5rem;
@@ -47,16 +44,17 @@
 		margin: 0.25rem;
 		display: inline-block;
 		cursor: pointer;
+		transition: border-radius 0.25s;
 	}
 	.color-preview:hover {
-		@apply shadow-lg;
+		border-radius: 1rem;
 	}
 
 	.number {
 		@apply text-gray-700;
 	}
 	.hex {
-		@apply text-gray-700 text-sm;
+		@apply text-gray-700 text-xs;
 	}
 
 	button {
@@ -64,10 +62,10 @@
 	}
 
 	header {
-		@apply pb-2 mb-2 border-b-2 border-gray-300;
+		@apply pb-2 mb-2 border-b-2 border-gray-200;
 	}
 	footer {
-		@apply pt-2 mt-2 border-t-2 border-gray-300;
+		@apply pt-2 mt-2 border-t-2 border-gray-200;
 	}
 
 }
@@ -89,6 +87,9 @@
 }
 
 @media (min-width: 768px) { /* md */
+	.hex {
+		@apply text-sm;
+	}
 }
 
 @media (min-width: 1024px) { /* lg */

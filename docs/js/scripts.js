@@ -10,7 +10,10 @@ window.onload = ()=> {
 		html += '</div>';
 	}
 	document.getElementById('colors').innerHTML = html;
+
+	document.getElementById('print-btn').onclick = ()=> window.print();
 };
+
 function copyText(text,num,elm) {
 	let input = document.createElement('input');
 	input.setAttribute('value', text);

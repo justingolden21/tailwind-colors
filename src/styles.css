@@ -14,6 +14,10 @@
 		margin: 1rem;
 	}
 
+	*:focus, button:focus {
+		@apply outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-opacity-50;
+	}
+
 	h1 {
 		@apply text-2xl font-light;
 	}
@@ -55,14 +59,29 @@
 		@apply text-gray-700 text-sm;
 	}
 
+	button {
+		@apply p-2 rounded-md text-gray-700 hover:bg-gray-700 hover:text-white;
+	}
+
+	header {
+		@apply pb-2 mb-2 border-b-2 border-gray-300;
+	}
+	footer {
+		@apply pt-2 mt-2 border-t-2 border-gray-300;
+	}
+
 }
 
 @media print {
-	h1, a, p.my-4, hr {
+	header, footer {
 		display: none;
 	}
 	body, .color-preview {
 		margin: 0;
+	}
+	.color {
+		margin-top: 0.125rem;
+		margin-bottom: 0.125rem;
 	}
 }
 

@@ -17,7 +17,7 @@ window.onload = ()=> {
 	document.getElementById('dark-btn').onclick = ()=> {
 		dark = !dark;
 		document.body.style.backgroundColor = dark ? '#000' : '#FFF';
-		document.body.style.color = dark ? '#FFF' : '#000';
+		document.body.style.color = dark ? '#FFF' : '#111827';
 	};
 };
 

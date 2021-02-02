@@ -68,7 +68,10 @@
 	}
 
 	button {
-		@apply p-2 mx-1 rounded-md text-gray-700 hover:bg-gray-700 hover:text-white;
+		@apply p-2 mx-1 rounded-md text-gray-700;
+	}
+	button:hover, button.active {
+		@apply bg-gray-700 text-white;
 	}
 
 	header {

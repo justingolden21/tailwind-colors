@@ -30,6 +30,7 @@ window.onload = ()=> {
 	get('more-btn').onclick = ()=> {
 		more = !more;
 		renderColors();
+		get('more-btn').classList.toggle('active');
 	};
 };
 

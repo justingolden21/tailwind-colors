@@ -10,7 +10,9 @@ function renderColors() {
 		for(let key in colors[color]) {
 			if(key=='name') continue;
 			let hex = colors[color][key];
-			html += `<div class="color"><p class="number">${key}</p><div class="color-preview" style="background-color:${hex};" onclick="copyText('${hex}',${key},this)"></div><p class="hex">${hex}</p></div>`;
+			html += `<div class="color"><p class="number">${key}</p>
+			<div class="color-preview" style="background-color:${hex};" onclick="copyText('${hex}',${key},this)" oncontextmenu="setBackground(event,'${hex}',${key})"></div>
+			<p class="hex">${hex}</p></div>`;
 		}
 	}
 	get('colors').innerHTML = html;
@@ -19,6 +21,7 @@ window.onload = ()=> {
 	renderColors();
 
 	get('print-btn').onclick = ()=> window.print();
+
 	get('download-btn').onclick = ()=> get('download-link').click();
 
 	get('dark-btn').onclick = ()=> {
@@ -49,4 +52,10 @@ function copyText(text, num, elm) {
 		elm.innerHTML = check;
 		setTimeout(()=>elm.innerHTML='', 750);
 	}
- }
+}
+
+function setBackground(e, hex, num) {
+	e.preventDefault();
+	d.body.style.backgroundColor = hex;
+	d.body.style.color = num > 300 ? '#FFF' : '#111827';
+}

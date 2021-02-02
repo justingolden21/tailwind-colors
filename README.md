@@ -14,6 +14,10 @@ Click the download button to download the PDF of the poster
 
 Click the dark button to toggle dark mode, which lets you see the colors on a dark background
 
+Click the plus button to view an expanded palette
+
+Right click a color to preview it as the background
+
 ### FAQ
 
 > My poster doesn't look right

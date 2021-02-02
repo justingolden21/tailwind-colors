@@ -58,4 +58,5 @@ function setBackground(e, hex, num) {
 	e.preventDefault();
 	d.body.style.backgroundColor = hex;
 	d.body.style.color = num > 300 ? '#FFF' : '#111827';
+	dark = false;
 }

@@ -1,4 +1,9 @@
 maybe:
 add share buttons
-add icon
 make it a PWA
+pdf download for extended colors (h2 { page-break-after: avoid; })
+compress colors.js
+option to copy color names ("gray-500", "bg-gray-500", "text-gray-500" etc.)
+add download/text for files such as bootstrap/sass css files, photoshop/illustrator/gimp palettes
+keyboard shortcuts for buttons (P for print, D for dark, M for more colors)
+keyboard shortcuts (0,1,2,3) for only showing colors of certain number (50,100,200,300)

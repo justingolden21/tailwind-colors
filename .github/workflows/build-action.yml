@@ -9,8 +9,7 @@ jobs:
       - run: npm install -g
       - run: npm -v
       - run: node -v
-      - run: nvm install 14.15.4
-      - run: nvm use 14.15.4
-      - run: sudo n stable
+      - run: npm install -g npm stable.
+      - run: npm install -g node
       - run: npm -v
       - run: node -v

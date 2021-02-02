@@ -1,7 +1,11 @@
 let d = document, get = d.getElementById.bind(d);
-window.onload = ()=> {
+
+let dark = false, more = false;
+
+function renderColors() {
 	let html = '';
 	for(let color in colors) {
+		if(!more && !basicColors.includes(color)) continue;
 		html += `<h2>${color} &mdash; <small>colors.${colors[color].name}</small></h2>`;
 		for(let key in colors[color]) {
 			if(key=='name') continue;
@@ -10,15 +14,22 @@ window.onload = ()=> {
 		}
 	}
 	get('colors').innerHTML = html;
+}
+window.onload = ()=> {
+	renderColors();
 
 	get('print-btn').onclick = ()=> window.print();
 	get('download-btn').onclick = ()=> get('download-link').click();
 
-	let dark = false;
 	get('dark-btn').onclick = ()=> {
 		dark = !dark;
 		d.body.style.backgroundColor = dark ? '#000' : '#FFF';
 		d.body.style.color = dark ? '#FFF' : '#111827';
+	};
+
+	get('more-btn').onclick = ()=> {
+		more = !more;
+		renderColors();
 	};
 };
 

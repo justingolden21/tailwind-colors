@@ -1,16 +1,16 @@
-# Tailwind Colors
+# Tailwind Colors <img src="docs/img/icon.svg" width="48px">
 
 https://justingolden.me/tailwind-colors
 
-### About
+**A quick reference to view, copy, and print TailwindCSS colors**
 
-A quick reference to view, copy, and print TailwindCSS colors
+### Usage
 
 Click a color to copy it
 
 Click the print button (or <kbd>ctrl</kbd> + <kbd>P</kbd>) to print as a mini reference poster on 8.5 x 11 or A4 paper : )
 
-Click the download button to download the PDF of the poster
+Click the download button to download the PDF of the poster (or download [here](https://github.com/justingolden21/tailwind-colors/raw/master/docs/poster/tailwind_colors.pdf))
 
 Click the dark button to toggle dark mode, which lets you see the colors on a dark background
 
@@ -20,9 +20,13 @@ Right click a color to preview it as the background
 
 ### FAQ
 
-> My poster doesn't look right
+**My poster doesn't look right**
 
 Make sure you've enabled "Background graphics" in your print menu under "More settings." Also, be sure to print in color mode and disable "headers and footers."
+
+**Please add this feature / I have feedback / I'd like to contribute**
+
+Feel free to reach out to me at contact@justingolden.me
 
 ### Development
 

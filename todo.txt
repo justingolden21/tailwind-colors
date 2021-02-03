@@ -7,3 +7,4 @@ option to copy color names ("gray-500", "bg-gray-500", "text-gray-500" etc.)
 add download/text for files such as bootstrap/sass css files, photoshop/illustrator/gimp palettes
 keyboard shortcuts for buttons (P for print, D for dark, M for more colors)
 keyboard shortcuts (0,1,2,3) for only showing colors of certain number (50,100,200,300)
+click to toggle color mode (show/copy hsl instead of hex)

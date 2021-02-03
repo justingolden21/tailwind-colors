@@ -9,7 +9,7 @@ function renderColors() {
 		html += `<h2>${color} &mdash; <small>colors.${colors[color].name}</small></h2>`;
 		for(let key in colors[color]) {
 			if(key=='name') continue;
-			let hex = colors[color][key];
+			let hex = '#' + colors[color][key];
 			html += `<div class="color"><p class="number">${key}</p>
 			<div class="color-preview" style="background-color:${hex};" onclick="copyText('${hex}',${key},this)" oncontextmenu="setBackground(event,'${hex}',${key})"></div>
 			<p class="hex">${hex}</p></div>`;

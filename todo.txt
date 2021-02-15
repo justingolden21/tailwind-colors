@@ -9,3 +9,4 @@ keyboard shortcuts for buttons (P for print, D for dark, M for more colors)
 keyboard shortcuts (0,1,2,3) for only showing colors of certain number (50,100,200,300)
 click to toggle color mode (show/copy hsl instead of hex)
 add more copy options (semicolon after, semicolon and css comment "#123123; /* gray-50 */"
+compressed css file download, css file for "bg-colorname-100" or "text-colorname-100" etc

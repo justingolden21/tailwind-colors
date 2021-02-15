@@ -35,6 +35,19 @@ window.onload = ()=> {
 		renderColors();
 		get('more-btn').classList.toggle('active');
 	};
+
+	get('css-btn').onclick = ()=> {
+		let txt = ':root {\n';
+		for(let color in colors) {
+			if(!more && !basicColors.includes(color)) continue;
+			let name = color.replace(' ','').toLowerCase();
+			for(let key in colors[color]) {
+				if(key=='name') continue;
+				txt += `\t--${name}-${key}: #${colors[color][key]};\n`;
+			}
+		}
+		downloadFile(txt + '}', 'tailwind-colors.css');
+	};
 };
 
 function copyText(text, num, elm) {
@@ -52,6 +65,22 @@ function copyText(text, num, elm) {
 		elm.innerHTML = check;
 		setTimeout(()=>elm.innerHTML='', 750);
 	}
+}
+
+function downloadFile(str, fileName) {
+	const properties = {type: 'plain/text'};
+	try {
+		file = new File([str], fileName, properties);
+	} catch(e) {
+		file = new Blob([str], properties);
+	}
+
+	let link = d.createElement('a');
+	link.download = fileName;
+	link.href = URL.createObjectURL(file);
+	d.body.appendChild(link);
+	link.click();
+	d.body.removeChild(link);
 }
 
 function setBackground(e, hex, num) {

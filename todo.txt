@@ -11,3 +11,4 @@ click to toggle color mode (show/copy hsl instead of hex)
 add more copy options (semicolon after, semicolon and css comment "#123123; /* gray-50 */"
 compressed css file download, css file for "bg-colorname-100" or "text-colorname-100" etc
 copy without "#" option, preview multiple colors next to each other option
+download only some colors (select colors/rows/cols)

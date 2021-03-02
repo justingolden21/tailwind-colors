@@ -12,3 +12,19 @@ add more copy options (semicolon after, semicolon and css comment "#123123; /* g
 compressed css file download, css file for "bg-colorname-100" or "text-colorname-100" etc
 copy without "#" option, preview multiple colors next to each other option
 download only some colors (select colors/rows/cols)
+
+
+generate tailwind.config.js with selected colors:
+```js
+const colors = require('tailwindcss/colors')
+
+module.exports = {
+  theme: {
+    extend: {
+      colors: {
+        bluegray: colors.blueGray,
+      }
+    },
+  },
+}
+```

@@ -42,6 +42,8 @@ Production: `npm run build`
 
 Repository : https://github.com/justingolden21/tailwind-colors
 
+Tailwind Labs on Figma: https://www.figma.com/@tailwindlabs
+
 <hr>
 
 - My website: https://justingolden.me

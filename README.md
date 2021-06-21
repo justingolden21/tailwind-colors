@@ -4,6 +4,8 @@ https://justingolden.me/tailwind-colors
 
 **A quick reference to view, copy, and print TailwindCSS colors**
 
+**Tailwind Colors** is a website for quickly copying (and previewing) colors, and also features a downloadable / printable poster.
+
 ### Usage
 
 Click a color to copy it
@@ -40,6 +42,8 @@ Production: `npm run build`
 
 Repository : https://github.com/justingolden21/tailwind-colors
 
+Tailwind Labs on Figma: https://www.figma.com/@tailwindlabs
+
 <hr>
 
 - My website: https://justingolden.me
@@ -47,3 +51,5 @@ Repository : https://github.com/justingolden21/tailwind-colors
 - My repos: https://github.com/justingolden21
 
 - Contact me: contact@justingolden.me
+
+<small>Colors featured are property of TailwindCSS. This website is unaffiliated with TailwindCSS.</small>

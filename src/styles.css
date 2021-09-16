@@ -14,7 +14,8 @@
 		margin: 1rem;
 	}
 
-	*:focus, button:focus {
+	*:focus,
+	button:focus {
 		@apply outline-none ring-2 ring-indigo-500 ring-opacity-50;
 	}
 
@@ -32,7 +33,7 @@
 	}
 
 	img {
-/*		-moz-user-select: none;
+		/*		-moz-user-select: none;
 		-webkit-user-select: none;
 		-ms-user-select: none;
 		user-select: none;*/
@@ -70,7 +71,8 @@
 	button {
 		@apply p-2 mx-1 rounded-md text-gray-700;
 	}
-	button:hover, button.active {
+	button:hover,
+	button.active {
 		@apply bg-gray-700 text-white;
 	}
 
@@ -88,10 +90,12 @@
 }
 
 @media print {
-	header, footer {
+	header,
+	footer {
 		display: none;
 	}
-	body, .color-preview {
+	body,
+	.color-preview {
 		margin: 0;
 	}
 	.color {
@@ -100,17 +104,21 @@
 	}
 }
 
-@screen sm { /* 640px */
+@screen sm {
+	/* 640px */
 }
 
-@screen md { /* 768px */
+@screen md {
+	/* 768px */
 	.hex {
 		@apply text-sm;
 	}
 }
 
-@screen lg { /* 1024px */
+@screen lg {
+	/* 1024px */
 }
 
-@screen xl { /* 1280px */
+@screen xl {
+	/* 1280px */
 }

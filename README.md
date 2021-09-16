@@ -26,6 +26,8 @@ Right click a color to preview it as the background
 
 Make sure you've enabled "Background graphics" in your print menu under "More settings." Also, be sure to print in color mode and disable "headers and footers."
 
+You can always simply download the PDF and then print that, and you should be good to go : )
+
 **Please add this feature / I have feedback / I'd like to contribute**
 
 Feel free to reach out to me at contact@justingolden.me
@@ -46,10 +48,10 @@ Tailwind Labs on Figma: https://www.figma.com/@tailwindlabs
 
 <hr>
 
-- My website: https://justingolden.me
+-   My website: https://justingolden.me
 
-- My repos: https://github.com/justingolden21
+-   My repos: https://github.com/justingolden21
 
-- Contact me: contact@justingolden.me
+-   Contact me: contact@justingolden.me
 
 <small>Colors featured are property of TailwindCSS. This website is unaffiliated with TailwindCSS.</small>
